@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="p-5">
+<h1>Model Performance</h1>
+<p><strong>Accuracy:</strong> {{ accuracy | round(2) }}%</p>
+<h3>Cost History</h3>
+<img src="data:image/png;base64,{{ cost_plot }}" class="img-fluid" alt="Cost Plot">
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-4">Back</a>
+</body>
+</html>
